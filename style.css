@@ -50,7 +50,7 @@ section#main-card {
     background-repeat: no-repeat;
     background-size: 326px 140px;
     box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.09);
-    border-radius: 5px;
+    border-radius: 15px;
     width: 326px;
     height: 374px;
     display: grid;
