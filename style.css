@@ -1,0 +1,112 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --grayish--blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --bg-card: #fff;
+}
+
+
+/* 
+########################################
+ Design global & mobile-first
+########################################
+*/
+
+* {
+    font-family: 'Kumbh Sans', cursive;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+section#main-card {
+    background: url('/images/bg-mobile.png');
+    width: 375px;
+    height: 667px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-first {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text-gray {
+    color: var(--dark-gray);
+}
+
+/* Card */
+
+.card {
+    background-color: var(--bg-card);
+    background-image: url('/images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: 326px 140px;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    width: 326px;
+    height: 374px;
+    display: grid;
+    grid-template-rows: 188px auto auto ;
+    grid-template-columns: 1fr;
+}
+
+.card .avatar {
+    display: flex;
+    align-self: end;
+    justify-self: center;
+}
+
+.card .avatar img {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.card .info-profil {
+    text-align: center;
+}
+
+
+.card .stats {
+    border-top: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+/* 
+########################################
+Responsive 1440px 
+########################################
+*/
+@media (min-width: 1440px) { 
+    section#main-card {
+        background: url('/images/bg-desktop.png');
+        width: 1440px;
+        height: 720px;
+    }
+
+    /* Card */
+    
+    .card {
+        width: 350px;
+        background-size: 350px 140px;
+    }
+}
+
+
+footer {
+    margin-top: 50px;
+}
+
+/* FrontEndMentor */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
